@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tofindst | 移動觀察家：數位品牌架構</title>
+    <title>tofindst | 路上的故事收集人</title>
     <style>
-        /* 視覺法律實施：tofindst 品牌規範 */
         :root {
             --bg-color: #F8F5F2;    /* 米白暖灰 */
             --main-text: #2A2A2A;   /* 炭黑 */
-            --accent-color: #B88C6E; /* 焦糖淺棕 - 聚財色 */
-            --sub-color: #B2C2B1;    /* 鼠尾草綠 - 執行力 */
+            --accent-color: #B88C6E; /* 焦糖淺棕 */
             --font-main: "PingFang TC", "Microsoft JhengHei", sans-serif;
         }
 
@@ -28,7 +26,6 @@
             overflow-x: hidden;
         }
 
-        /* 中軸對齊法律 */
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -36,7 +33,7 @@
             padding: 0 20px;
         }
 
-        /* 導覽列：極簡秩序 */
+        /* 導覽列：非線性記憶碎片 */
         nav {
             height: 80px;
             display: flex;
@@ -61,33 +58,29 @@
             color: var(--accent-color);
         }
 
-        /* 主標題視覺：clamp 技術自適應 */
         h1 {
-            font-size: clamp(22px, 4.5vw, 32px);
-            letter-spacing: 4px;
+            font-size: clamp(28px, 5vw, 42px);
+            letter-spacing: 8px;
             margin-bottom: 20px;
-            font-weight: 500;
+            font-weight: 400;
+            text-transform: lowercase;
         }
 
         /* 核心敘事：17px 加粗放大 */
         .hero-text {
             font-size: 17px;
             font-weight: bold;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             color: var(--main-text);
         }
 
-        /* 副標設定：左邊距微調 */
-        h2 {
-            font-size: 14px;
-            color: var(--accent-color);
-            margin-left: 6px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
+        .tagline {
+            font-size: 13px;
+            color: #999;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
         }
 
-        /* tofindFadeUp 動畫語法 */
         @keyframes tofindFadeUp {
             from {
                 opacity: 0;
@@ -101,71 +94,7 @@
 
         .fade-in {
             opacity: 0;
-            animation: tofindFadeUp 1s ease forwards;
+            animation: tofindFadeUp 1.2s ease forwards;
         }
 
-        .delay-1 { animation-delay: 0.2s; }
-        .delay-2 { animation-delay: 0.5s; }
-        .delay-3 { animation-delay: 0.8s; }
-
-        /* 首頁 Hero 區域 */
-        .hero {
-            height: 85vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .cta-button {
-            padding: 12px 30px;
-            border: 1px solid var(--accent-color);
-            background: transparent;
-            color: var(--accent-color);
-            text-decoration: none;
-            font-size: 13px;
-            transition: 0.4s;
-            margin-top: 20px;
-        }
-
-        .cta-button:hover {
-            background: var(--accent-color);
-            color: white;
-        }
-
-        footer {
-            padding: 40px 0;
-            font-size: 12px;
-            color: #999;
-        }
-    </style>
-</head>
-<body>
-
-    <nav class="fade-in delay-1">
-        <a href="#">HOME</a>
-        <a href="#">MAP</a>
-        <a href="#">JOURNEY</a>
-        <a href="#">OBSERVATIONS</a>
-        <a href="#">WORKS</a>
-        <a href="#">ABOUT</a>
-    </nav>
-
-    <div class="container">
-        <section class="hero">
-            <h2 class="fade-in delay-1">Nomadic Architect</h2>
-            <h1 class="fade-in delay-2">tofindst</h1>
-            <p class="hero-text fade-in delay-3">
-                我走過的路，都會成為我的光。<br>
-                我在建的不是網站，是我全新的人生。
-            </p>
-            <a href="#" class="cta-button fade-in delay-3">EXPLORE THE JOURNEY</a>
-        </section>
-    </div>
-
-    <footer class="container">
-        <p>© 2026 tofindst. All rights reserved. 壬申日主系統化重啟中。</p>
-    </footer>
-
-</body>
-</html>
+        .delay
